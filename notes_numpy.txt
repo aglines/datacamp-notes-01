@@ -1,3 +1,97 @@
 notes_numpy.txt
-whats missing from lists? you cant ITERATE over them & perform actiosn on each elmt.
-ergo NUMPY
+whats missing from lists? you cant ITERATE over them & perform math actions on each elmt.
+NUMPY ARRAYS take the place of lists
+Np assumes every array only has a single type
+if list is creatd w diff types, TYPE COERCION happens
+NP will CONVERT each value to ... what, string? first one it saw? (no)
+NP ARRAY is just a new python type like float, bool etc
+    so it has its own methods
+
+T.EX
+    list + list         .- will concatenate normal lists into one list, 2x as long
+    np_array + np_array _   will add each value element-wise, doubling each.
+
+NP SUBSETTING
+works biasclly same as reg lists
+
+NP SUBSET USING BOOL
+    if you want to get each elmt in an nparray which is, tex, over 10
+npa_list > 10
+    the result is a numpy array with booleans, True if the value was over 10, false if not
+Then can use bool array inside sqr brackets to to subsets
+    y_array[y_array > 2]
+This selects out ONLY the values that match the equality requirement, adds those to an array
+    # array([3])
+Selecting data from the result of a comparison .
+
+--CONVERT list to numpy array
+-- x_reg_list = [1,2,3]
+--- np_xlist = np.array(x_reg_list)
+
+
+__ BOOLEAN numpy array - use comparison
+higher = np_xlist > 2
+higher is now an array with all values from np_xlist above 2
+
+SUBSETTING
+the notation is throwing me off is why. ok thnk i get it now tho
+y is type ARRAY (of ints)           check the numpy.py file values are there
+"high" is a BOOLEAN ARRAY
+    where each elmt is the result of a COMPARISON STRUCTURE
+
+so crossing these, y[high]
+is ITERATING over the array of ints "y"
+    and if the elmt is True, it's added to the output array
+it does NOT do the comparison again for each, it's already done that& got the result.
+
+so you put the BOOLEAN ARRAY on the innermost in sqr [], 
+then the outer is the ARRAY youre iterating over,
+does each value match True? if yes then _ add to output
+ok this is a long winded explanatino but now i see it.
+
+
+======================= 2D NP ARRAYS
+TYPE of nparray gives :  
+    ndarray
+ a regular list of lists becomes a 2D np array
+
+ CHECK ARRAY DIMENSIONS with "shape" .. THIS IS NOT a METHOD, remember
+ shape is an ATTRIBUTE not a METHOD
+    METHOD has ROUND parenths after them, ATTRIVUTES do not
+
+SUBSETTINGS to get one elmt, do NOT nest the brackets
+    np_2d[0][2]     or also
+    np_2d[0, 2]  exact same thing
+
+so now select a specific slice. if you want BOTH rows, use colon first
+    np_2d[: , 1:3]
+
+this says ..         [: , 1:3 ]
+first element is ROWS, if you want all the rows you will delimit later, use COLON
+2nd elemt is COLUMNS, so we specify
+i gotta draw this cant type it .... ok NOW i get it very well
+... more exercises , yup, this got easier
+
+############## BASIC STATISTICS W NUMPY
+
+np.mean - functino from numpy package
+corcoeff
+std
+sum, sort ... Numpy speed is 
+column_stack
+
+EXERCISES
+gk_heights = np.array(np_heights[np_positions == 'GK'] )
+ok i see - you can DEFINE the index in sqrbackets 
+    to be ANY equivalency test, it becomes the criteria to be added to output - cool!
+    it will be checking the SAME index in ANOTHER array
+    bc these are both separate arrays
+wow hi turing machine vibes
+
+
+
+
+
+
+
+
