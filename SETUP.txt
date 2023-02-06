@@ -1,0 +1,28 @@
+SETUP
+SETUP - notes, noise, focus
+
+====  turn off intellisense. settings.json lets you do this for lg-specific filetypes
+added to C:\Users\[me]\AppData\Roaming\Code\User
+    
+"[plaintext]": {
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  }
+}
+
+==== NOISE CONTROL for openplan workspaces
+- airpods w noizio app playing whitenoise
+- over-ear headphones w mike
+- dictation set up so notes are easier,
+- men kommer ih'g att dictation follows kb settings, so to dicatet in Eng..
+    men... j måste inte, för att nu kan j sv hela tiden förmodlg även m anteckngr *shrug emoji*
+
+- later challenge - could I brew my own noise types? easier to dictate code if punctuation is right
+  there probably exists tools to do this at this point
+
+
+==== github repo i know this is stupid but this is the most efficient note-taking way for me jn
+
+nu kan vi kör
