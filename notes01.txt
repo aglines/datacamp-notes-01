@@ -96,6 +96,47 @@ or slicing using all slices
 
 APPEND to list just use +
 
+FUNCTIONS
+  ok . yes reusable code
+  ex:  type
+  max(list_name) - gets max value from list
+  round(1.33, 1)
+  help(function_name)
+  ?function_name
+  len(variable_1) - strings or lists, prob more too
+
+max func has 2 ways,
+  if 1 arg, it must be an iterable & max w return largest item in it
+  if 2 arg, max will find the larger of the 2 and give that
+
+MULT ARGUMENTS ja ok.  
+help(...) shows docstring specifiying func params,
+  for SORTED tex you can give it a key which wil tell it WHAT TO SORT BY,
+    a list you define yourself even . cool
+
+METHODS   functions that belong to partic object types
+  .index is a list method but also strings
+  len()
+  .count  gives the number of types a specified string apears
+STRING METHODS 
+  .capitalize
+  .replace
+
+LIST METHODS
+  .append
+PACKAGES
+
+importing
+
+selectiv import
+
+diff ways of importing
+
+
+######## NUMPY
+
+
+
 
 
 
