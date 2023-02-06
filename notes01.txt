@@ -1,0 +1,48 @@
+================  NOTES datacamp day 1
+KURS    Intro to Py
+status_ restarting. 
+
+
+pratice exercises? sure lets see wat i rembr
+    # type of object
+x = 2
+type(x)
+>   int
+
+ja j kommer ihåg, but not enuf, do the real course again ok, just practice the muscle memory
+
+
+===========
+
+ipython shell is embdded in datacamp exercises
+    using py 3.X (idk, dont matter)
+
+- OK exercises do not get me xp anymore which ja fair
+
+================================
+- MATH simple math
+- PRINT sttmts in parenths ja
+
+=================================
+- VARS and TYPES
+type(x)
+int
+float
+    what specific details w floats
+string
+    in 'single quotes' or "double" but CANNOT mix these, no surpr there
+    variable methods like concat  but can use math terms like + 
+        doubledesc = desc + desc
+bool
+  Capitalize as True or False, 1 or 0
+
+  trying to mess around w .toString method but no work, 
+    if (profitable == True) : {print(type(profitable.toString)) }
+    bool object has no attribute 'toString'
+      ohhh yeah it's just str(x_boolean_value)
+print(type(year1))  # however this works
+
+=========== CONVERT TYPES
+str(x)
+int(x)
+
