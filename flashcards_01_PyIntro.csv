@@ -1,0 +1,35 @@
+0,define a line of code?,newline or enter but also semicolon on same line,,
+1,punctuation for print?,parenths,print("dubbelcitatteckna") or print('single quote'),>  "dubbelcitatteckna"
+2,get data type of var?,type(variable),type(3.14),>  float
+3,convert object to diff type?,str to stringify t.ex or int() etc,str(4.0),>  "4.0"
+4,define a list?,square brackets ; sepd by commas ; may be diff types,"list_x = [1,2,3]",
+5,define a list element?,sqr brackets,list_x[0],> #first elmt b c zero indexed
+6,define a subset of list?,sqr brackets & colon range ; first elmt to *before* last elmt,list_x[0:2],"> ['inclusive','exclusive']"
+7,nested list?,sqr brackets still,"listx = [ [1,2], [5,6] ]",reference any element like x[2][:2]
+8,shortland for list subset?,leave out the 1st or last index,listx[:3] goes from 1st elmt to elmt#2,listx[3:] from 4th elmt to end
+9,making a list duplicate,use list(x) or all colon subset,y = list(x) or  y = x[:],
+10,reach end parts of list?,negative index,listx[-1],can start from negative too but it only counts FORWARD
+11,update one elmt in list,simple just redefine,listx[2] = "new",same for subset
+12,delete element?,del(listx[3]),will move all other indexes over,
+13,add elmt to list?,"y = x + ['e', 'f']",,
+14,replace multiple list elmts,"x[2:] = ['s', 't']",,
+15,find required arguments for a function?,help(functName) or ?function_name,,
+16,diff btwn method & function?,method is dot-notation & after object name,function is before object & parenths,
+17,find how many times an elmt appears in list?,listx.count("asdf"),,
+18,change string to uppercase?,string method "upper",this_word.upper,
+19,find the index of a list elmt?,index(list_x("asdf")),this also works for strings,
+20,package import name conventions?,use the full name esp way down in code so it's very clear,,
+21,why use numpy arrays instead of regular lists?,can't iterate and do math on each elmt in a list,,
+22,make a numpy array from a reg list?,list_x = numpy.array(xlist) or np.array(xlist),,
+23,do math on each elmt in array?,treat nparray as iterable,np_height_meters = np_height_inches * 0.0254,
+24,select particular data from array?,set up criteria via a comparative operator which creates an array of bools - more_than_5 = x_array > 5,then - x_array[more_than_5] iterates over array & only takes values that match bool True,the output is an array consisting of only the data which matches
+25,what happens if array has diff data types?,type coercion,some values are forced into being others & idk real rules yet,
+26,subset arrays?,same as lists just sqr bracket notation,,
+27,find type or dimensions of N-dimensional array?,type(x_array) only gives its class 'numpy.ndarray',"x_array.shape gives full shape - (4,2)",rows and columns
+28,find the first row of 2D array?,"x_array[0, :]",0 is the row,: is every column in that row
+29,find the first column of 2d array?,"x_array[:, 0]",: is every row in the selected column,0 is the selected column
+30,find the last row of 2D array?,"x_array[-1, :]",-1 is the selected row,: is every column in that row
+31,find the last column of 2d array?,"x_array[:, -1]",: is every row in the selected column,-1 is the selected column
+32,multiply a 2d array by each value in another array?,just multiply,"x_array([1, 2], [3, 4]) * y_array([3,3,3])","result is the same shape as the 2d array - ([],[])"
+33,find mean or median of array?,numpy.mean(x_array) or numpy.median(y_array),,
+34,use comparison operators to select certain data,"gk_heights = np.array(np_heights[np_positions == 'GK'])",,

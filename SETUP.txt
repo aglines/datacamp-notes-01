@@ -26,3 +26,19 @@ added to C:\Users\[me]\AppData\Roaming\Code\User
 ==== github repo i know this is stupid but this is the most efficient note-taking way for me jn
 
 nu kan vi kör
+
+
+
+ANKI FLASHCARD NOTES
+tho it used to only accept tsv (prob fr goog sheets)
+now it seems to like csv much bettah
+5 fields, index, qusetion, answer, code example, response if u typed that in shell
+
+KOM IHÅG! in csv files, 
+in order to escape a comma char, put the whole field in doublequotes
+
+__WRONG dont need double quote escapes for this type idk
+then to include quotes, use 2 sets, tex 
+  "See, the stringified version of 4.0 is ""4.0"", såklart"
+rendered version
+  > See, the stringified version of 4.0 is "4.0", såklart

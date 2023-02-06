@@ -1,4 +1,0 @@
-0   define a line of code   newline or enter but also semicolon on same line
-1   punctuation for print?  print(variable, "string")
-2   get data type of var?   type(variable)
-3   convert object to diff type?    str(4.0)<br>this will stringify it to "4.0"
