@@ -1,0 +1,66 @@
+define a line of code	newline/enter means new statement,<br> but can also use semicolon<br> <br> <br><br> x = 3 ; y = 4<br> <br> <br> <br><br> <br> <br> <br> 
+print	"in PARENTHs<br> <br> <br> <br><br> print(1 + 2)<br> print(""the string"")<br> <br> <br><br> <br> <br> <br> "
+define a variable	DECLARE first, before use<br> Python KNOWS its type<br> <br> <br><br> x = 4<br> <br> <br> <br><br> single equals-sign = assignment double equals = test equality<br> <br> <br> 
+math - mod	percent sign %<br> <br> <br> <br><br> x = 25 % 4<br> <br> <br> <br><br> <br> <br> <br> 
+math - exponent	double-multiply star<br> <br> <br> <br><br> y = x ** 2<br> <br> <br> <br><br> <br> <br> <br> 
+get data type of a var	TYPE cmd<br> <br> <br> <br><br> type y<br> &gt; integer<br> <br> <br><br> <br> <br> <br> 
+string, how to define	"use both double and single quotes<br> <br> <br> <br><br> x = ""string""<br> x = 'string'<br> <br> <br><br> <br> <br> <br> "
+boolean, how to define	True or False, capitaliztn required<br> If summed, False = 0, True = 1<br> <br> <br><br> b = True<br> <br> <br> <br><br> <br> <br> <br> 
+integer type	simple, no weird so far<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+float type	has an integer part &amp; a fractional part<br> <br> <br> <br><br> y = 1,5<br> <br> <br> <br><br> Q: can I get to each part? Q: when a comma means decimal, what then?<br> <br> <br> 
+convert one type to another	"Use the type name<br> <br> <br> <br><br> y = 1<br> string(y)   &gt; ""1""'<br> <br> <br><br> <br> <br> <br> "
+concatenate string	"use SUM with 2 string types<br> <br> <br> <br><br> x = ""the "" ; y = ""cat""<br> z = x + y<br> print(z)  &gt;  ""the cat""<br> <br><br> <br> <br> <br> "
+define a list	"square brackets<br> <br> <br> <br><br> aList = [""squareBrackets"", ""foo"", 3]<br> <br> <br> <br><br> <br> <br> <br> "
+define a nested list	"multiple sqr brackets,<br> best to use mult lines<br> <br> <br><br> bList = [ [ ""abc"", 4 ] ,<br> [ ""def"", 6 ] ]<br> <br> <br><br> <br> <br> <br> "
+while defining a list what can I do	"can do math etc while defining<br> <br> <br> <br><br> cList = [3 + 4, ""foo"" + ""bar""]<br> <br> <br> <br><br> <br> <br> <br> "
+term for a single part of a list	an ELEMENT of a list<br> <br> <br> <br><br> aList = [3, 2]<br> <br> <br> <br><br> <br> <br> <br> 
+"refer to an element's number in its list"	"its INDEX, start from 0<br> <br> <br> <br><br> print( bList [ 0 ] )<br> &gt; 'abc'<br> <br> <br><br> will print using sgl quotes to show type, regardless of sgl or dbl quotes when defined<br> <br> <br> "
+term for mult sequential elemts of a list	a SLICE of a list<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+make a new list from a slice of another	"refer to a range of them using colon<br> <br> <br> <br><br> dList = cList [ 0 : 2 ]<br> &gt; [7, ""foobar""]<br> <br> <br><br> <br> <br> <br> "
+define a slice of a list	FIRST is index to start from,<br> 2ND is index to STOP BEFORE<br> <br> <br><br> aSlice = aList [ 0 : 2 ]<br> &gt; [1, 2]<br> <br> <br><br> Slice will NEVER INCLUDE that 2nd index<br> <br> <br> 
+make list slice start from zero	Leave out 1st index<br> <br> <br> <br><br> bSlice = aList [ : 2 ]<br> &gt; [1, 2]<br> <br> <br><br> <br> <br> <br> 
+make list slice go til end	Leave out last index<br> <br> <br> <br><br> bSlice = aList [ 0 :  ]<br> &gt; [3, 4, 5, 6]<br> <br> <br><br> wait DOES THIS WORK? below we see that it might<br> <br> <br> 
+index count from before end of list	Negative numbr counting<br> BUT only goes forward direction<br> <br> <br><br> qList [ -1 : 2 ]<br> <br> <br> <br><br> starts from last elmt fwd -- but stops before elmt 2<br> <br> <br> 
+refer to a subset of list of lists	chained sqr brackets<br> <br> <br> <br><br> subset = [0][0]<br> <br> <br> <br><br> goes to 1st list  - then gets 1st elmt in that list<br> <br> <br> 
+replace list elmts	"redefine using elmt's index or slice<br> <br> <br> <br><br> gList[7] = ""this""<br> fam[0:2] = [""new"", 3]<br> <br> <br><br> <br> <br> <br> "
+extend list	"plus sign just like string concat<br> <br> <br> <br><br> gList +  [7, ""more""]<br> nyList = aList +  [7]<br> <br> <br><br> <br> <br> <br> "
+delete list elmt	DEL cmd<br> Shifts elmts all over<br> <br> <br><br> del ( aList [ 0 ] )<br> <br> <br> <br><br> list elmt 1 now becomes list elmt 0<br> <br> <br> 
+how list memory works	Namespace holds REFERENCE to list<br> If copy is made, new name refers to the same memory as orig name<br> so if actual list changes, both the copy and the orignal name change<br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+make a true new list not a copy	LIST cmd<br> or explicitly define a slice that has all eltms<br> <br> <br><br> y = list ( x )<br> y =  origList [ : ]<br> <br> <br><br> <br> <br> <br> 
+what is a function	predefined usable code<br> <br> <br> <br><br> type(), max(), round(), etc<br> <br> <br> <br><br> <br> <br> <br> 
+"get function's documentation"	HELP command<br> <br> <br> <br><br> help ( type )<br> ?max<br> <br> <br><br> lists required / optional arguments etc<br> <br> <br> 
+sort a list	SORTED fn on a list<br> Gives new list w all items from the iterable in ascending order<br> <br> <br><br> sorted ( aList )  &gt;  returns sorted list<br> xList = sorted ( aList )<br> <br> <br><br> <br> <br> <br> 
+what is an iterable	any collection of objects<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+what are objects &amp; methods	"Everythg in Py is an object. Methods are functions that ""belong"" to Py objects<br> Data type string has methods like capitalize, replace, etc<br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> "
+apply a method to an object	dot-notation on the object name<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+get the index of an elmt in list	"INDEX method<br> <br> <br> <br><br> aList.index ( ""chair"" )<br> &gt; [ 0 ]<br> <br> <br><br> <br> <br> <br> "
+get how often an elmt occurs in a list	"COUNT method<br> <br> <br> <br><br> aList.count ( ""chair"" )<br> &gt; 17<br> <br> <br><br> <br> <br> <br> "
+capitalize first letter in a word	CAPITALIZE method on a string<br> <br> <br> <br><br> city.capitalize()<br> &gt;  London<br> <br> <br><br> <br> <br> <br> 
+replace every occurrence of something in a string	"REPLACE method<br> <br> <br> <br><br> fruit.replace ( ""a"", ""o"" )<br> &gt; bonono<br> <br> <br><br> <br> <br> <br> "
+add to end of a list	"APPEND method<br> <br> <br> <br><br> aList.append( ""extra"", ""more"" )<br> <br> <br> <br><br> <br> <br> <br> "
+reverse the order of a list	REVERSE method<br> <br> <br> <br><br> nyList = oldList.reverse()<br> <br> <br> <br><br> <br> <br> <br> 
+remove something in a list	REMOVE method<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+maintainable code from elsewhere	"Packages, used w import cmd<br> So u don't download u dont need<br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> "
+get a package	PIP<br> <br> <br> <br><br> python3 get-pip.py<br> <br> <br> <br><br> <br> <br> <br> 
+refer to package code w an alias	IMPORT .. AS ..<br> <br> <br> <br><br> import numpy as np<br> <br> <br> <br><br> <br> <br> <br> 
+import only 1 thing from package	FROM  .. IMPORT<br> <br> <br> <br><br> from numpy import array<br> <br> <br> <br><br> <br> <br> <br> 
+"when NOT to use ""as"" shorthand?"	"If you dont use code right away, easy to forget that ""np"" is numpy<br> So dont use an alias<br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> "
+Numpy array advantage	"Np can do math onto every elmt in its array<br> Faster, &amp; lists can't<br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> "
+Numpy array rule	All data types must be same<br> If they arent, it will COERCE data type<br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+Sum values in a np array	SUM + operator for element-by-element calculation<br> <br> <br> <br><br> npArray = [1,2]<br> npArray * 2<br> &gt; [2,4]<br> <br><br> Every elmt in the result has been added, individually<br> <br> <br> 
+Other array rules for slices, index etc	Same rules as for lists<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+See if each elmt of array meets a condition	&gt; or &lt; operators give array w e/ value T/F if value met condition<br> <br> <br> <br><br> npArray = [ 1, 2, 3 ]<br> WasIt = npArray &gt; 1<br> &gt; [ False, True, True ]<br> <br><br> <br> <br> <br> 
+Get rid of all array values given a condition	Subset in place<br> <br> <br> <br><br> npArray[ npArray &gt; 5 ]<br> <br> <br> <br><br> this returns arr w only vals &gt; 5<br> <br> <br> 
+Get # dimensions of an array	TYPE cmd<br> <br> <br> <br><br> type(npArray)<br> &gt;  numpy.3darray<br> <br> <br><br> <br> <br> <br> 
+define multi-d array	same as nested lists<br> <br> <br> <br><br> np_2d &gt; array( [  [ 1, 2 ] , [ 5, 6 ]  ] )<br> <br> <br> <br><br> each sublist in list correspd to a ROW in 2d npArr<br> <br> <br> 
+what is an attribute	"like a method, but uses parenths ( ) / ""round brackets""<br> <br> <br> <br><br> <br> <br> <br> <br><br> 2d data type coercion, all must be same type<br> <br> <br> "
+get one element of a 2d array	intersection of row and column<br> <br> <br> <br><br> np2d[ 0 ][ 2 ]<br> or  np2d[ 0, 2 ]<br> <br> <br><br> <br> <br> <br> 
+get a whole row of a 2d array	"specify row number, "":"" for all cols<br> <br> <br> <br><br> np2d[ 0 ][ : ]<br> or  np2d[ 0, : ]<br> <br> <br><br> <br> <br> <br> "
+get a whole col of a 2d array	"specify col number, "":"" for all rows<br> <br> <br> <br><br> np2d[ : ][ 1 ]<br> or  np2d[ : , 1 ]<br> <br> <br><br> <br> <br> <br> "
+get a row slice of 2d array	"specify row numbers, "":"" for all cols<br> <br> <br> <br><br> np2d[ 0:3 ][ : ]<br> or  np2d[ 0:3 , : ]<br> <br> <br><br> <br> <br> <br> "
+get a col slice of 2d array	"specify col numbers, "":"" for all rows<br> <br> <br> <br><br> np2d[ : ][ 2 : 5 ]<br> or  np2d[ : , 2 : 5 ]<br> <br> <br><br> <br> <br> <br> "
+stats methods - mean, median	MEAN, MEDIAN attributes<br> <br> <br> <br><br> numpy.mean( 2dArray [ : ][ 0 ] )<br> <br> <br> <br><br> <br> <br> <br> 
+stats methods - correlatin coeffct	see if sets of numbers correlated<br> <br> <br> <br><br> numpy.corrcoeff( 2dArray [ 0 ][ 2 ] )<br> numpy.corrcoeff( 2dArray [ 0 , 2 ] )<br> <br> <br><br> <br> <br> <br> 
+sum a set of array data	SUM attribute<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+sort a set of array data	SORT attribute<br> <br> <br> <br><br> <br> <br> <br> <br><br> <br> <br> <br> 
+get standard deviation of data set	STD attribute<br> <br> <br> <br><br> np.std(npPpl[ : , 0 ] )<br> <br> <br> <br><br> <br> <br> <br> 
