@@ -124,14 +124,29 @@ STRING METHODS
 
 LIST METHODS
   .append
-PACKAGES
+  most list methods change the list theyre called on
 
-importing
 
-selectiv import
+PACKAGES  exteranl code etc
+  need to keep it outside bc too huge codebase wd be messy
 
-diff ways of importing
+importing, selectiv import
+  import numpy as np etc
+import numpy
+  array([1,2,3]) > error
+  numpy.array([1,2,3]) >  correct
+import numpy as np
+  np.array([1,2,3]) >  correct
+from numpy import array
+  array([1,2,3])    > now this works w no err
+HOWEVER yousr losing context now
+if its way down , better to just explicit numpy.array, so later coders c read
 
+When you import a package is there a way to tell ALL the things in it
+from shell or etc? idk prob just rtfm
+
+Diff ways of importing
+from scipy.linalg import inv as my_inv
 
 ######## NUMPY
 

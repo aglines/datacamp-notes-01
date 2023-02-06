@@ -1,0 +1,3 @@
+notes_numpy.txt
+whats missing from lists? you cant ITERATE over them & perform actiosn on each elmt.
+ergo NUMPY
